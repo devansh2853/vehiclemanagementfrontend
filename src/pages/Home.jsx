@@ -13,7 +13,7 @@ function Home() {
   }, []);
   return (
     <>
-      <div>
+      <div className="flex flex-col flex-wrap">
         {vehicleData.map((vehicle, index) => (
           <div key={index}> {JSON.stringify({ vehicle })} </div>
         ))}
