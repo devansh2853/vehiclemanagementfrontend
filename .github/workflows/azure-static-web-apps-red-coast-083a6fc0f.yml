@@ -13,7 +13,6 @@ jobs:
   build_and_deploy_job:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
-    env: VITE_BASE_API_URL=https://vehiclemanagament-f0ftecgearbba7aw.canadacentral-01.azurewebsites.net
     name: Build and Deploy Job
     permissions:
       id-token: write
