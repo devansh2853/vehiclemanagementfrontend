@@ -42,8 +42,8 @@ function Header() {
               </button>
               <div
                 className="absolute w-full pb-2 top-full left-1/2 -translate-x-1/2 bg-orange-700 opacity-0 -translate-y-5 pointer-events-none 
-              group-hover:pointer-events-auto group-hover:translate-y-0 group-hover:opacity-100 
-              group-active:pointer-events-auto group-active:translate-y-0 group-active:opacity-100
+              md:group-hover:pointer-events-auto md:group-hover:translate-y-0 md:group-hover:opacity-100 
+              sm:group-active:pointer-events-auto sm:group-active:translate-y-0 sm:group-active:opacity-100
               rounded-b-lg transition-all ease-in-out duration-200"
               >
                 <VehicleDropdown />
