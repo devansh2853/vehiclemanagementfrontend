@@ -10,8 +10,6 @@ function AddVehicle() {
 
   useEffect(() => {
     async function fetchFields() {
-      console.log(BASE_URL);
-      console.log(import.meta.env.VITE_BASE_API_URL);
       var info = (await axios.get(BASE_URL + "/fields")).data;
       info = info
         .map((field) => {

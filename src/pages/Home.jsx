@@ -6,7 +6,6 @@ function Home() {
   useEffect(() => {
     async function fetchFields() {
       var info = (await axios.get(BASE_URL)).data;
-      console.log(info);
       setVehicleData(info);
     }
     fetchFields();
