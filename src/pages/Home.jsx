@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 function Home() {
-  const BASE_URL = import.meta.env.VITE_BASE_API_URL + "/Car";
+  const BASE_URL = import.meta.env.VITE_BASE_API_URL + "Car";
+  console.log(BASE_URL);
   const [vehicleData, setVehicleData] = useState([{}]);
   useEffect(() => {
     async function fetchFields() {

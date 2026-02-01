@@ -4,7 +4,7 @@ import { useParams } from "react-router";
 
 function AddVehicle() {
   const { vehicle } = useParams();
-  const BASE_URL = import.meta.env.VITE_BASE_API_URL + `/${vehicle}`;
+  const BASE_URL = import.meta.env.VITE_BASE_API_URL + `${vehicle}`;
   const [vehicleFields, setVehicleFields] = useState([{}]);
   const [formData, setFormData] = useState({ VehicleType: vehicle });
 
