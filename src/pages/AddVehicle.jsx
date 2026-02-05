@@ -11,16 +11,14 @@ function AddVehicle() {
   useEffect(() => {
     async function fetchFields() {
       var info = (await axios.get(BASE_URL + "/fields")).data;
-      info = info
-        .map((field) => {
-          if (field.type == "String") {
-            field.type = "text";
-          } else if (field.type == "Int32") {
-            field.type = "number";
-          }
-          return field;
-        })
-        .filter((field) => field.name !== "VehicleType");
+      info = info.map((field) => {
+        if (field.type == "String") {
+          field.type = "text";
+        } else if (field.type == "Int32") {
+          field.type = "number";
+        }
+        return field;
+      });
       console.log(info);
       setVehicleFields(info);
     }
